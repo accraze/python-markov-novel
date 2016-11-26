@@ -1,0 +1,16 @@
+[paths]
+source =
+   src/markov_novel
+   */site-packages/markov_novel
+
+[run]
+branch = true
+source =
+    markov_novel
+    tests
+parallel = true
+
+[report]
+show_missing = true
+precision = 2
+omit = *migrations*
