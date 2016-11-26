@@ -25,7 +25,7 @@ class Chapter(object):
         """
         self.paragraphs = []
         self.paragraphs.append('\n')
-        for x in xrange(randint(0, 50)):
+        for x in range(randint(0, 50)):
             p = Paragraph(self.model)
             self.paragraphs.append(p.get_paragraph())
             self.paragraphs.append('\n')

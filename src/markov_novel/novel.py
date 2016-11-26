@@ -25,7 +25,7 @@ class Novel(object):
         Creates a chapters
         and appends them to list
         """
-        for count in xrange(self.chapter_count):
+        for count in range(self.chapter_count):
             chapter_num = count + 1
             c = Chapter(self.markov, chapter_num)
             self.chapters.append(c)

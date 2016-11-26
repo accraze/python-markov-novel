@@ -21,7 +21,7 @@ class Paragraph(object):
         of 5 sentences.
         """
         self.text = ''
-        for x in xrange(randint(5, 12)):
+        for x in range(randint(5, 12)):
             sentence = self._write_sentence()
             self.text = self.text + sentence
         return self.text
