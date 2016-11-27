@@ -73,6 +73,23 @@ Installation
 
     pip install markov-novel
 
+Quick Start
+===========
+
+::
+
+    import markovify
+    import markov_novel
+
+    with open('path/to/corpus.txt') as f:
+        text = f.read()
+    # Build the model.
+    text_model = markovify.Text(text)
+    novel = markov_novel.Novel(text_model, chapter_count=1)
+    novel.write(novel_title='my-novel', filetype='md')
+
+The novel will be written to your current working directory.
+
 Documentation
 =============
 
