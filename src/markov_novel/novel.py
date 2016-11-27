@@ -1,4 +1,4 @@
-from chapter import Chapter
+from .chapter import Chapter
 
 
 class Novel(object):

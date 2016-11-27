@@ -1,7 +1,7 @@
 from random import randint
 
 import markovify
-from paragraph import Paragraph
+from .paragraph import Paragraph
 
 
 class Chapter(object):
